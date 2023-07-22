@@ -1,0 +1,128 @@
+#用于编写自定义规则(此处规则将优先生效)，(可参考https://lancellc.gitbook.io/clash/clash-config-file/rules)：
+#例如“🚀 节点选择”、“🎯 全球直连”这样的自定义规则组必须与config.yaml中的代理规则组相匹配，否则将无法运行
+# 【#】号代表注释！！！注释条目不会生效！！！
+# - DOMAIN-SUFFIX,google.com,🚀 节点选择
+# - DOMAIN-KEYWORD,baidu,🎯 全球直连
+# - DOMAIN,ad.com,REJECT
+# - SRC-IP-CIDR,192.168.1.201/32,DIRECT
+# - IP-CIDR,127.0.0.0/8,DIRECT
+# - IP-CIDR6,2620:0:2d0:200::7/32,🚀 节点选择
+# - DST-PORT,80,DIRECT
+# - SRC-PORT,7777,DIRECT
+#Sycnext
+ - DOMAIN,v1.mk,Proxies
+ - DOMAIN,notion-api.splitbee.io,Proxies
+ - DOMAIN,themoviedb.org,Proxies
+ - DOMAIN,thetvdb.com,Proxies
+ - DOMAIN,tmdb.org,Proxies
+ - DOMAIN,olevod.com,Proxies
+ - DOMAIN,olemovienews.com,Proxies
+ - DOMAIN,haiwaikan.com,Proxies
+ - DOMAIN,bfvvs.com,Proxies
+ - DOMAIN,cdn.venus7202.com,Proxies
+ - DOMAIN,cdn.ceres9350.com,Proxies
+ - DOMAIN,cdn.efhie.com,Proxies
+ - DOMAIN,movie.douban.com,DIRECT
+ - DOMAIN,mddcloud.com.cn,DIRECT
+ - DOMAIN,aliyundrive.asia,DIRECT
+ - DOMAIN,v.ddys.zip,DIRECT
+ - DOMAIN,v.ddys.pro,DIRECT
+ - DOMAIN,ddys.art,DIRECT
+ - DOMAIN,zh188.net,DIRECT
+ - DOMAIN,cz.cz01.site,DIRECT
+ - DOMAIN,www.m3u8.tv.jiexi.8old.cn,DIRECT
+ - DOMAIN,kczybf.com,DIRECT
+ - DOMAIN,vip.lzcdn2.com,DIRECT
+ - DOMAIN,mixpanel.com,DIRECT
+ - DOMAIN,appsflyer.com,DIRECT
+ - DOMAIN,tv.apple.com,DIRECT
+ - DOMAIN,ctyunxs.cn,DIRECT
+ - DOMAIN-KEYWORD,lz-cdn,DIRECT
+#IP-CN
+ - DOMAIN-SUFFIX,bilibili.com,DIRECT
+ - DOMAIN-SUFFIX,youku.com,DIRECT
+ - DOMAIN-SUFFIX,qq.com,DIRECT
+ - DOMAIN-SUFFIX,mgtv.com,DIRECT
+ - DOMAIN-SUFFIX,qiyi.com,DIRECT
+ - DOMAIN-SUFFIX,iqiyi.com,DIRECT
+ - DOMAIN-SUFFIX,tencent-cloud.com,DIRECT
+ - DOMAIN-SUFFIX,aliyuncs.com,DIRECT
+#AI Platform
+ - DOMAIN-SUFFIX,chatpdf.com,GlobalTV
+ - DOMAIN-SUFFIX,agefans.app,GlobalTV
+ - DOMAIN-SUFFIX,ai.com,GlobalTV
+ - DOMAIN-SUFFIX,auth0.com,GlobalTV
+ - DOMAIN-SUFFIX,challenges.cloudflare.com,GlobalTV
+ - DOMAIN-SUFFIX,client-api.arkoselabs.com,GlobalTV
+ - DOMAIN-SUFFIX,events.statsigapi.net,GlobalTV
+ - DOMAIN-SUFFIX,featuregates.org,GlobalTV
+ - DOMAIN-SUFFIX,identrust.com,GlobalTV
+ - DOMAIN-SUFFIX,intercom.io,GlobalTV
+ - DOMAIN-SUFFIX,intercomcdn.com,GlobalTV
+ - DOMAIN-SUFFIX,poe.com,GlobalTV
+ - DOMAIN-SUFFIX,sentry.io,GlobalTV
+ - DOMAIN-SUFFIX,stripe.com,GlobalTV
+ - DOMAIN-KEYWORD,openai,GlobalTV
+ - DOMAIN-SUFFIX,airhorn.solutions,GlobalTV
+ - DOMAIN-SUFFIX,airhornbot.com,GlobalTV
+ - DOMAIN-SUFFIX,bigbeans.solutions,GlobalTV
+#Discord
+ - DOMAIN-SUFFIX,dis.gd,Spotify
+ - DOMAIN-SUFFIX,discord-activities.com,Spotify
+ - DOMAIN-SUFFIX,discord.co,Spotify
+ - DOMAIN-SUFFIX,discord.com,Spotify
+ - DOMAIN-SUFFIX,discord.design,Spotify
+ - DOMAIN-SUFFIX,discord.dev,Spotify
+ - DOMAIN-SUFFIX,discord.gg,Spotify
+ - DOMAIN-SUFFIX,discord.gift,Spotify
+ - DOMAIN-SUFFIX,discord.gifts,Spotify
+ - DOMAIN-SUFFIX,discord.media,Spotify
+ - DOMAIN-SUFFIX,discord.new,Spotify
+ - DOMAIN-SUFFIX,discord.store,Spotify
+ - DOMAIN-SUFFIX,discord.tools,Spotify
+ - DOMAIN-SUFFIX,discordactivities.com,Spotify
+ - DOMAIN-SUFFIX,discordapp.com,Spotify
+ - DOMAIN-SUFFIX,discordapp.io,Spotify
+ - DOMAIN-SUFFIX,discordapp.net,Spotify
+ - DOMAIN-SUFFIX,discordapp.page.link,Spotify
+ - DOMAIN-SUFFIX,discordcdn.com,Spotify
+ - DOMAIN-SUFFIX,discordmerch.com,Spotify
+ - DOMAIN-SUFFIX,discordpartygames.com,Spotify
+ - DOMAIN-SUFFIX,discordsays.com,Spotify
+ - DOMAIN-SUFFIX,discordstatus.com,Spotify
+ - DOMAIN-SUFFIX,hammerandchisel.ssl.zendesk.com,Spotify
+ - DOMAIN-SUFFIX,watchanimeattheoffice.com,Spotify
+ - DOMAIN-SUFFIX,p16-tiktokcdn-com.akamaized.net,Spotify
+#TikTok
+ - DOMAIN-SUFFIX,bytedapm.com,Telegram
+ - DOMAIN-SUFFIX,bytegecko-i18n.com,Telegram
+ - DOMAIN-SUFFIX,bytegecko.com,Telegram
+ - DOMAIN-SUFFIX,byteoversea.com,Telegram
+ - DOMAIN-SUFFIX,ibytedtos.com,Telegram
+ - DOMAIN-SUFFIX,ibyteimg.com,Telegram
+ - DOMAIN-SUFFIX,ipstatp.com,Telegram
+ - DOMAIN-SUFFIX,isnssdk.com,Telegram
+ - DOMAIN-SUFFIX,muscdn.com,Telegram
+ - DOMAIN-SUFFIX,musical.ly,Telegram
+ - DOMAIN-SUFFIX,sgpstatp.com,Telegram
+ - DOMAIN-SUFFIX,snssdk.com,Telegram
+ - DOMAIN-SUFFIX,tik-tokapi.com,Telegram
+ - DOMAIN-SUFFIX,tiktok.com,Telegram
+ - DOMAIN-SUFFIX,tiktokcdn-us.com,Telegram
+ - DOMAIN-SUFFIX,tiktokcdn.com,Telegram
+ - DOMAIN-SUFFIX,tiktokd.net,Telegram
+ - DOMAIN-SUFFIX,tiktokd.org,Telegram
+ - DOMAIN-SUFFIX,tiktokv.com,Telegram
+ - DOMAIN-KEYWORD,musical.ly,Telegram
+ - DOMAIN-KEYWORD,tiktok,Telegram
+ - PROCESS-NAME,com.zhiliaoapp.musically,Telegram
+#Custmoize
+ - DOMAIN-SUFFIX,stboy.net,Proxies #LGBT
+ - DOMAIN-SUFFIX,iboy1069.com,Proxies #LGBT
+ - DOMAIN-SUFFIX,tt1069.com,Proxies #LGBT
+ - DOMAIN-KEYWORD,grindr,Proxies #LGBT
+ - DOMAIN,checkip.synology.com,DIRECT #Synology ddns
+ - DOMAIN,ddns.synology.com,DIRECT #Synology ddns
+ - DOMAIN-SUFFIX,huaren.us,Proxies #American Chinese website
+ - DOMAIN-SUFFIX,civitai.com,Proxies #Stable Diffusion models
+
