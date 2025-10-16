@@ -1,9 +1,5 @@
-name: '🤖 OpenAi Redirect'
-desc: |
-  Apple/Cloudflare Relay 域名定向至 🤖 OpenAi 代理组
-author: 树男
-version: '1.0.0'
-category: '🌐 Custom Routing'
+name: 'My Custom Routes'   # 可选，用于展示
+desc: 'Keep Apple relay to 🤖 OpenAi'  # 可选，用于展示
 
 rules:
   - DOMAIN-SUFFIX,pple-relay.apple.com,🤖 OpenAi
