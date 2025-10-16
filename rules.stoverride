@@ -1,18 +1,16 @@
-name: rules
-desc: Keep my custom OpenAi rules
+name: '🤖 OpenAi Redirect'
+desc: |
+  Apple/Cloudflare Relay 域名定向至 🤖 OpenAi 代理组
+author: 树男
+version: '1.0.0'
+category: '🌐 Custom Routing'
+
 rules:
- - DOMAIN-SUFFIX,guzzoni.apple.com,🤖 OpenAi
- - DOMAIN-KEYWORD,smoot.apple.com,🤖 OpenAi
- - DOMAIN-KEYWORD,apple-relay,🤖 OpenAi
- - DOMAIN-SUFFIX,cp4.cloudflare.com,🤖 OpenAi
- - DOMAIN-SUFFIX,gateway.icloud.com,🤖 OpenAi
- - DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com,🤖 OpenAi
- - DOMAIN-SUFFIX,apps.mzstatic.com,🤖 OpenAi
- - DOMAIN-SUFFIX,pple-relay.apple.com,🤖 OpenAi
- - DOMAIN-SUFFIX,apple-relay.fastly-edge.com,🤖 OpenAi
- - DOMAIN-SUFFIX,apple-relay.cloudflare.com,🤖 OpenAi
- - DOMAIN-SUFFIX,gateway.icloud.com,🤖 OpenAi
- - DOMAIN-SUFFIX,guzzoni.apple.com,🤖 OpenAi
- - DOMAIN-SUFFIX,cp4.cloudflare.com,🤖 OpenAi
- - DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com,🤖 OpenAi
- - DOMAIN-SUFFIX,apps.mzstatic.com,🤖 OpenAi
+  - DOMAIN-SUFFIX,pple-relay.apple.com,🤖 OpenAi
+  - DOMAIN-SUFFIX,apple-relay.fastly-edge.com,🤖 OpenAi
+  - DOMAIN-SUFFIX,apple-relay.cloudflare.com,🤖 OpenAi
+  - DOMAIN-SUFFIX,gateway.icloud.com,🤖 OpenAi
+  - DOMAIN-SUFFIX,guzzoni.apple.com,🤖 OpenAi
+  - DOMAIN-SUFFIX,cp4.cloudflare.com,🤖 OpenAi
+  - DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com,🤖 OpenAi
+  - DOMAIN-SUFFIX,apps.mzstatic.com,🤖 OpenAi
